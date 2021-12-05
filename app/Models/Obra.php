@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Obra extends Model
+{
+    use HasFactory;
+
+    protected $connection = 'mongodb';
+    protected $collection = 'obras';
+    protected $primarykey = 'id';
+
+    protected $fillable = [
+        'title',
+        'image',
+    ];
+}
