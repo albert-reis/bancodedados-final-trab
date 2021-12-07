@@ -3,15 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class usuario extends Model
+class Usuario extends Eloquent
 {
-    use HasFactory;
     protected $connection = 'mongodb';
-    protected $collection = 'usuarios';
+    protected $guarded = [];
 
     protected $fillable = [
-        'nome', 'senha', 'description',
+        'name', 'password', 'date',
     ];
 }

@@ -55,25 +55,50 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <form id="store">
+                        @if ($data)
+                        <form action="{{ route('user.update', $data->_id) }}" method="GET">
+                            @csrf
                             <small>*campos obrigatórios</small>
                             <div class="form-group">
                                 <label for="nomeUsuario">Nome do usuário*</label>
                                 <input type="text" class="form-control" id="nomeUsuario" maxlength="50"
-                                    name="nomeUsuario" placeholder="Informe o nome do usuário..." required>
+                                    name="name" placeholder="Informe o nome do usuário..." value="{{ $data->name }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="senha">Senha*</label>
-                                <input type="password" class="form-control" id="senha" maxlength="50" name="senha"
+                                <input type="password" class="form-control" id="password" maxlength="50" name="password"
+                                    placeholder="Insira a senha do usuário..." value="{{ $data->password }}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataUsuario">Data de criação*</label>
+                                <input type="date" class="form-control" id="dataUsuario" name="date"
+                                    placeholder="Informe a data da criação..." value="{{ $data->date }}" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+                        </form>
+                            
+                        @else
+                        <form action="{{ route('user.save') }}" method="GET">
+                            @csrf
+                            <small>*campos obrigatórios</small>
+                            <div class="form-group">
+                                <label for="nomeUsuario">Nome do usuário*</label>
+                                <input type="text" class="form-control" id="nomeUsuario" maxlength="50"
+                                    name="name" placeholder="Informe o nome do usuário..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha*</label>
+                                <input type="password" class="form-control" id="password" maxlength="50" name="password"
                                     placeholder="Insira a senha do usuário..." required>
                             </div>
                             <div class="form-group">
                                 <label for="dataUsuario">Data de criação*</label>
-                                <input type="date" class="form-control" id="dataUsuario" name="dataUsuario"
+                                <input type="date" class="form-control" id="dataUsuario" name="date"
                                     placeholder="Informe a data da criação..." required>
                             </div>
                             <button type="submit" class="btn btn-primary mt-3">Salvar</button>
-                        </form>
+                        </form>                            
+                        @endif                        
                     </div>
                 </div>
             </main>

@@ -57,18 +57,26 @@
                     <table class="table table-striped table-sm data-table">
                         <thead>
                             <tr>
+                                <th scope="col">ID</th>
                                 <th scope="col">Título</th>
                                 <th scope="col">Descrição</th>
                                 <th scope="col">Imagem</th>
+                                <th scope="col">Ações</th>
                             </tr>
                         </thead>
                         <!-- As linhas de dados da tabela são gerados no arquivo main.js (função loadItemsTable()) -->
-                        <tbody id="itemsBody">
+                        <tbody>
                             <?php foreach($obras as $obra) { ?>
                             <tr>
+                                <td>{{ $obra->_id }}</td>
                                 <td>{{ $obra->title }}</td>
                                 <td>{{ $obra->description }}</td>
                                 <td>{{ $obra->image }}</td>
+                                <!--<td><img src="{{ $obra->image }}" alt=""></td>-->
+                                <td>
+                                    <a href="{{ route('obra.form', $obra->_id) }}" class="btn btn-warning btn-sm">Atualizar</a>
+                                    <a href="{{ route('obra.delete', $obra->_id) }}" class="btn btn-danger btn-sm">Deletar</a>
+                                </td>
                             </tr>
                             <?php } ?>
                         </tbody>

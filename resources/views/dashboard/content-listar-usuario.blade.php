@@ -57,13 +57,27 @@
                     <table class="table table-striped table-sm data-table">
                         <thead>
                             <tr>
+                                <th scope="col">ID</th>
                                 <th scope="col">Nome</th>
                                 <th scope="col">Data de criação</th>
+                                <th scope="col">Senha</th>
                                 <th scope="col">Ações</th>
                             </tr>
                         </thead>
                         <!-- As linhas de dados da tabela são gerados no arquivo main.js (função loadItemsTable()) -->
-                        <tbody id="itemsBody">
+                        <tbody>
+                            <?php foreach($users as $user) { ?>
+                            <tr>
+                                <td>{{ $user->_id }}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->password }}</td>
+                                <td>{{ $user->date }}</td>
+                                <td>
+                                    <a href="{{ route('user.form', $user->_id) }}" class="btn btn-warning btn-sm">Atualizar</a>
+                                    <a href="{{ route('user.delete', $user->_id) }}" class="btn btn-danger btn-sm">Deletar</a>
+                                </td>
+                            </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>

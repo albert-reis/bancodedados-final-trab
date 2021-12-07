@@ -55,6 +55,29 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
+                        @if($data)
+                        <form action="{{ route('obra.update', $data->_id) }}" method="GET">
+                            @csrf
+                            @method('PUT')
+                            <small>*campos obrigatórios</small>
+                            <div class="form-group">
+                                <label for="nome">Título*</label>
+                                <input type="text" class="form-control" id="nome" maxlength="50" name="title"
+                                    placeholder="Informe o título da obra..." value="{{ $data->title }}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nome">Descrição*</label>
+                                <input type="text" class="form-control" id="nome" maxlength="50" name="description"
+                                    placeholder="Descreva a obra..." value="{{ $data->description }}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="file">Imagem da obra*</label>
+                                <input type="file" class="form-control" id="data" name="image"
+                                    placeholder="Informe a data de fabricação do item..." required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+                        </form>                         
+                        @else
                         <form action="{{ route('post.save') }}" method="GET">
                             @csrf
                             <small>*campos obrigatórios</small>
@@ -74,7 +97,8 @@
                                     placeholder="Informe a data de fabricação do item..." required>
                             </div>
                             <button type="submit" class="btn btn-primary mt-3">Salvar</button>
-                        </form>
+                        </form>                                                     
+                        @endif
                     </div>
                 </div>
             </main>
