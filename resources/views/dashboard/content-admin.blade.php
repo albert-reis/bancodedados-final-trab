@@ -40,6 +40,12 @@
                                 Listar Usuários
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel" href="/listarusuario">
+                                <span data-feather="list"></span>
+                                Listar Obras
+                            </a>
+                        </li>
                 </div>
             </nav>
         </div>

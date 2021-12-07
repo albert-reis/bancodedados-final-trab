@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Dashboard\contentCadastrarObratrarObra;
+use App\Models\Obra;
 class CadastrarObraController extends Controller
 {
     public function index () {
@@ -12,9 +12,20 @@ class CadastrarObraController extends Controller
     }
 
     public function save (Request $request){
-        dd($request);
+        //dd($request);
 
-        
+        $data = new Obra($request->all());
+        $data->save();
+
+        if($data)
+        {
+            return redirect()->route('admin');
+        }
+        else
+        {
+            return back();
+        }
+
 
     }
 }

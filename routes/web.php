@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/cadastrarobra', [CadastrarObraController::class, 'index']);
 Route::get('/listarusuario', [ListarUsuarioController::class, 'index']);
 Route::get('/cadastrarusuario', [CadastrarUsuarioController::class, 'index']);

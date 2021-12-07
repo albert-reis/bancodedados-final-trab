@@ -7,8 +7,8 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Obra extends Eloquent
 {
-    private $connection = 'mongodb';
-    private $guarded = [];
+    protected $connection = 'mongodb';
+    protected $guarded = [];
     //public $primarykey = 'id_post';
     //protected $collection = 'obras';
 
