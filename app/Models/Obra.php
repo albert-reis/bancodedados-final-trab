@@ -10,9 +10,9 @@ class Obra extends Eloquent
     protected $connection = 'mongodb';
     protected $guarded = [];
     //public $primarykey = 'id_post';
-    //protected $collection = 'obras';
+    protected $collection = 'obras';
 
-    //protected $fillable = [
-     //   'title', 'image', 'description',
-    //];
+    protected $fillable = [
+        'title', 'image', 'description',
+    ];
 }

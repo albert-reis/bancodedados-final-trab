@@ -66,9 +66,9 @@
                         <tbody id="itemsBody">
                             <?php foreach($obras as $obra) { ?>
                             <tr>
-                                <td {{ $obra->title }}></td>
-                                <td {{ $obra->description }}></td>
-                                <td {{ $obra->image }}></td>
+                                <td>{{ $obra->title }}</td>
+                                <td>{{ $obra->description }}</td>
+                                <td>{{ $obra->image }}</td>
                             </tr>
                             <?php } ?>
                         </tbody>
