@@ -50,26 +50,26 @@ Oferecer maior publicidade a empresa contratante
 
 <b style="color:red;">Tutorial de instalação</b>
 
-1 - Possuir PHP <= 7.4.x
-2 - Possuir MongoDB
-3 - Possuir Laravel >= 8
-4 - Possuir NPM
-5 - Ir na pasta Tutorial-Instalação e mover o arquivo "php_mongodb.dll" para a pasta ext do diretório de instalação do PHP
-6 - Ir no arquivo php.ini da pasta de instalação do PHP e adicionar as seguintes funcionalidades:
+<p>1 - Possuir PHP <= 7.4.x</p>
+<p>2 - Possuir MongoDB</p>
+3 - Possuir Laravel >= 8</p>
+4 - Possuir NPM</p>
+5 - Ir na pasta Tutorial-Instalação e mover o arquivo "php_mongodb.dll" para a pasta ext do diretório de instalação do PHP</p>
+6 - Ir no arquivo php.ini da pasta de instalação do PHP e adicionar as seguintes funcionalidades:</p>
 
-extension=curl
-extension=fileinfo
-extension=gd2
-extension=intl
-extension=imap
-extension=mbstring
-extension=exif
-extension=mysqli
-extension=php_mongodb.dll //Principal para comunicação do banco de dados MongoDB
-extension=openssl
-extension=pdo_mysql
+<p>extension=curl</p>
+<p>extension=fileinfo</p>
+<p>extension=gd2</p>
+<p>extension=intl</p>
+<p>extension=imap</p>
+<p>extension=mbstring</p>
+<p>extension=exif</p>
+<p>extension=mysqli</p>
+<p>extension=php_mongodb.dll //Principal para comunicação do banco de dados MongoDB</p>
+<p>extension=openssl</p>
+<p>extension=pdo_mysql</p>
 
-5 - renomear o arquivo ".env.example" para ".env"
+5 - renomear o arquivo ".env.example" para ".env"</p>
 
 5 - Ainda na pasta de Tutorial-instalação, usar os parâmentros de configuração do arquivo env-configuracao.txt para o arquivo .env
 
