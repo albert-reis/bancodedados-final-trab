@@ -46,3 +46,39 @@ problema.
 <b>Objetivo Geral</b>
 
 Oferecer maior publicidade a empresa contratante
+
+
+<b style="color:red;">Tutorial de instalação</b>
+
+1 - Possuir PHP <= 7.4.x
+2 - Possuir MongoDB
+3 - Possuir Laravel >= 8
+4 - Possuir NPM
+5 - Ir na pasta Tutorial-Instalação e mover o arquivo "php_mongodb.dll" para a pasta ext do diretório de instalação do PHP
+6 - Ir no arquivo php.ini da pasta de instalação do PHP e adicionar as seguintes funcionalidades:
+
+extension=curl
+extension=fileinfo
+extension=gd2
+extension=intl
+extension=imap
+extension=mbstring
+extension=exif
+extension=mysqli
+extension=php_mongodb.dll //Principal para comunicação do banco de dados MongoDB
+extension=openssl
+extension=pdo_mysql
+
+5 - renomear o arquivo ".env.example" para ".env"
+
+5 - Ainda na pasta de Tutorial-instalação, usar os parâmentros de configuração do arquivo env-configuracao.txt para o arquivo .env
+
+6 - Entrar na pasta do projeto e executar usando o terminal do Windows/Linux o seguinte comando:
+$php artisan serve
+
+obs: Caso não funcionar, é preciso executar os seguintes comandos:
+
+$composer require laravel/ui
+$php artisan ui bootstrap
+$npm install
+$npm dev run
