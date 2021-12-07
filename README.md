@@ -71,15 +71,14 @@ Oferecer maior publicidade a empresa contratante
 
 <p>5 - renomear o arquivo ".env.example" para ".env"</p>
 
-<p>5 - Ainda na pasta de Tutorial-instalação, usar os parâmentros de configuração do arquivo env-configuracao.txt para o arquivo .env
+<p>5 - Ainda na pasta de Tutorial-instalação, usar os parâmentros de configuração do arquivo env-configuracao.txt para o arquivo .env</p>
 
-<p>6 - Entrar na pasta do projeto e executar usando o terminal do Windows/Linux o seguinte comando:
-$php artisan serve
+<p>6 - Entrar na pasta do projeto e executar usando o terminal do Windows/Linux o seguinte comando:</p>
+<p>$php artisan serve</p>
 
-obs: Caso não funcionar, é preciso executar os seguintes comandos:
+<p>obs: Caso não funcionar, é preciso executar os seguintes comandos:</p>
 
-$composer require laravel/ui
-$php artisan ui bootstrap
-$npm install
-$npm dev run
-</p>
+<p>$composer require laravel/ui</p>
+<p>$php artisan ui bootstrap</p>
+<p>$npm install</p>
+<p>$npm dev run</p>
