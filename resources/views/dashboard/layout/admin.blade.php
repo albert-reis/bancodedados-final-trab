@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Marcelo Albert Santana dos Reis, Ernani Alexandre Wippel Neto e Vitor Krowczuk Beirão">
     <link rel="icon" href="img/aba.png">
-    <title>Wippel admin</title>
 
     <!-- CSS -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -25,9 +24,10 @@
 </head>
 
 <body>
+
     @yield('content');
-    
-    
+
+
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('libs/DataTables/datatables.js') }}"></script>

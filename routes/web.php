@@ -5,6 +5,7 @@ use App\Http\Controllers\Dashboard\AdminController;
 use App\Http\Controllers\Dashboard\CadastrarObraController;
 use App\Http\Controllers\Dashboard\CadastrarUsuarioController;
 use App\Http\Controllers\Dashboard\ListarUsuarioController;
+use App\Http\Controllers\Dashboard\ListarObraController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/cadastrarobra', [CadastrarObraController::class, 'index']);
 Route::get('/listarusuario', [ListarUsuarioController::class, 'index']);
+Route::get('/listarobra', [ListarObraController::class, 'index']);
 Route::get('/cadastrarusuario', [CadastrarUsuarioController::class, 'index']);
 
 Route::get('/post', [CadastrarObraController::class, 'save'])->name('post.save');

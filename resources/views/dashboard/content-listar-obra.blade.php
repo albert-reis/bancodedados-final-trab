@@ -1,4 +1,4 @@
-@extends('dashboard.layout.listar-obra')
+@extends('dashboard.layout.admin')
 
 @section('content')
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
@@ -57,9 +57,9 @@
                     <table class="table table-striped table-sm data-table">
                         <thead>
                             <tr>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Data de criação</th>
-                                <th scope="col">Ações</th>
+                                <th scope="col">Título</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Imagem</th>
                             </tr>
                         </thead>
                         <!-- As linhas de dados da tabela são gerados no arquivo main.js (função loadItemsTable()) -->

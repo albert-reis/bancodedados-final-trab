@@ -1,4 +1,4 @@
-@extends('dashboard.layout.listar-usuario')
+@extends('dashboard.layout.admin')
 
 @section('content')
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
@@ -35,13 +35,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel-select" href="/listarusuario">
+                            <a class="nav-link text-painel" href="/listarusuario">
                                 <span data-feather="list"></span>
                                 Listar Usuários
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel" href="/listarobra">
+                            <a class="nav-link text-painel-select" href="/listarobra">
                                 <span data-feather="list"></span>
                                 Listar Obras
                             </a>

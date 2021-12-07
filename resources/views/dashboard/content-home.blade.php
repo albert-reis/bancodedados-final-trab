@@ -1,6 +1,6 @@
-@extends ('dashboard.layout.site-home');
+@extends('dashboard.layout.site');
 
-@section ('content')
+@section('content')
 <nav class="site-header sticky-top py-1">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2 d-none d-md-inline-block nav-buttons far fa-handshake" href="#obras"> Obras</a>

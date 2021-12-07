@@ -1,4 +1,4 @@
-@extends('dashboard.layout.cadastrar-usuario')
+@extends('dashboard.layout.admin')
 
 @section('content')
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
@@ -29,7 +29,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel-select   " href="/cadastrarusuario">
+                            <a class="nav-link text-painel-select" href="/cadastrarusuario">
                                 <span data-feather="plus-circle"></span>
                                 Cadastrar Usuários
                             </a>

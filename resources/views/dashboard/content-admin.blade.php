@@ -1,4 +1,4 @@
-@extends('dashboard.layout.site-admin');
+@extends('dashboard.layout.admin');
 
 @section ('content')
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"

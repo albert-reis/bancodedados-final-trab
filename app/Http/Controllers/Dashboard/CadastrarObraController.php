@@ -8,7 +8,7 @@ use App\Models\Obra;
 class CadastrarObraController extends Controller
 {
     public function index () {
-        return view('dashboard.contentCadastrarObra');
+        return view('dashboard.content-cadastrar-obra');
     }
 
     public function save (Request $request){
