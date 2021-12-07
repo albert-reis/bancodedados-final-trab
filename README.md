@@ -16,10 +16,10 @@ Para solucionar o problema do cliente será confeccionado um site no estilo de
 portfólio, contendo dados no qual o cliente julgar importante para divulgação de sua empresa,
 além de contato para contratação e contingente de clientes adquiridos ao longo dos anos de
 trabalho no ramo.
-Será utilizado o SGBD MySQL para armazenamento, manutenção e consulta de dados
+Será utilizado o SGBD MongoDB para armazenamento, manutenção e consulta de dados
 referentes a empresa e sua extensão. Utilização da linguagem PHP para fazer a comunicação
 entre backend e frontend com html e css com algumas funcionalidades do framework
-Bootstrap.
+Bootstrap e Laravel.
 
 <b>Delimitação do escopo</b>
 
