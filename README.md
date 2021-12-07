@@ -52,10 +52,10 @@ Oferecer maior publicidade a empresa contratante
 
 <p>1 - Possuir PHP <= 7.4.x</p>
 <p>2 - Possuir MongoDB</p>
-3 - Possuir Laravel >= 8</p>
-4 - Possuir NPM</p>
-5 - Ir na pasta Tutorial-Instalação e mover o arquivo "php_mongodb.dll" para a pasta ext do diretório de instalação do PHP</p>
-6 - Ir no arquivo php.ini da pasta de instalação do PHP e adicionar as seguintes funcionalidades:</p>
+<p>3 - Possuir Laravel >= 8</p>
+<p>4 - Possuir NPM</p>
+<p>5 - Ir na pasta Tutorial-Instalação e mover o arquivo "php_mongodb.dll" para a pasta ext do diretório de instalação do PHP</p>
+<p>6 - Ir no arquivo php.ini da pasta de instalação do PHP e adicionar as seguintes funcionalidades:</p>
 
 <p>extension=curl</p>
 <p>extension=fileinfo</p>
@@ -69,11 +69,11 @@ Oferecer maior publicidade a empresa contratante
 <p>extension=openssl</p>
 <p>extension=pdo_mysql</p>
 
-5 - renomear o arquivo ".env.example" para ".env"</p>
+<p>5 - renomear o arquivo ".env.example" para ".env"</p>
 
-5 - Ainda na pasta de Tutorial-instalação, usar os parâmentros de configuração do arquivo env-configuracao.txt para o arquivo .env
+<p>5 - Ainda na pasta de Tutorial-instalação, usar os parâmentros de configuração do arquivo env-configuracao.txt para o arquivo .env
 
-6 - Entrar na pasta do projeto e executar usando o terminal do Windows/Linux o seguinte comando:
+<p>6 - Entrar na pasta do projeto e executar usando o terminal do Windows/Linux o seguinte comando:
 $php artisan serve
 
 obs: Caso não funcionar, é preciso executar os seguintes comandos:
@@ -82,3 +82,4 @@ $composer require laravel/ui
 $php artisan ui bootstrap
 $npm install
 $npm dev run
+</p>
