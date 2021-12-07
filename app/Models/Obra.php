@@ -3,18 +3,16 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class Obra extends Model
+class Obra extends Eloquent
 {
-    use HasFactory;
+    private $connection = 'mongodb';
+    private $guarded = [];
+    //public $primarykey = 'id_post';
+    //protected $collection = 'obras';
 
-    protected $connection = 'mongodb';
-    protected $collection = 'obras';
-    protected $primarykey = 'id';
-
-    protected $fillable = [
-        'title',
-        'image',
-    ];
+    //protected $fillable = [
+     //   'title', 'image', 'description',
+    //];
 }
