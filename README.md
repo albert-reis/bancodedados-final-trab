@@ -48,7 +48,7 @@ problema.
 Oferecer maior publicidade a empresa contratante
 
 
-<b style="color:red;">Tutorial de instalação</b>
+<p style="color:red;">Tutorial de instalação</p>
 
 <p>1 - Possuir PHP <= 7.4.x</p>
 <p>2 - Possuir MongoDB</p>
