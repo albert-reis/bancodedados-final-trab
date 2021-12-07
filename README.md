@@ -1,66 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<b>Formulação do problema</b>
 
-## About Laravel
+O cliente deseja que sua marca possua uma maior visibilidade no meio digital através
+de um site que seja usado para propaganda e divulgação de serviços prestados além poder
+armazenar informações dos seus trabalhos de tempos em tempos, isto é, o cliente pensa que
+sua empresa precisa de uma nova forma de divulgação que alcance um público maior.
+O contratante é um empresário do ramo de terraplanagem, sua empresa chame-se
+Terraplanagem Wippel, e com o crescimento da mesma há necessidade de se alcançar um
+público maior de construtoras da região, e uma organização de seus dados sobre obras,
+maquinário e funcionários, para a exposição ao crescente público da área da construção civil.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<b>Solução proposta</b>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Para solucionar o problema do cliente será confeccionado um site no estilo de
+portfólio, contendo dados no qual o cliente julgar importante para divulgação de sua empresa,
+além de contato para contratação e contingente de clientes adquiridos ao longo dos anos de
+trabalho no ramo.
+Será utilizado o SGBD MySQL para armazenamento, manutenção e consulta de dados
+referentes a empresa e sua extensão. Utilização da linguagem PHP para fazer a comunicação
+entre backend e frontend com html e css com algumas funcionalidades do framework
+Bootstrap.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<b>Delimitação do escopo</b>
 
-## Learning Laravel
+As funcionalidades do sistema serão baseadas no formato de portfólio, onde o usuário
+poderá interagir com botões que levam o usuário a outras páginas contendo informações
+relevantes ao que se espera encontrar. Além disso, o sistema disponibilizará de uma função
+que demonstre ao degustador as atividades recentes realizadas pelo grupo envolvido.
+Justificativa de desenvolvimento
+Hoje em dia, é comum encontrar um site que diga sobre uma aplicação demonstrando
+suas funcionalidades com o intuito de defender a sua importância de implementação e
+mostrar que o que foi feito será útil de alguma forma para o usuário. No cenário atual, trata-se
+de um serviço e não um aplicativo, mas essa ideia faz total sentido no contexto atual,
+tornando-se relevante.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+O que torna a sua viabilidade é a necessidade de demonstrar de alguma forma, os
+serviços feitos a público, por outro lado, essa solução não se difere de nenhuma outra que
+esteja no mercado, muito pelo contrário, “reinventar a roda” não seria a palavra correta, mas
+desenvolver um método que funciona e que todos que compartilham dessa forma, expõem
+resultados positivos de seus negócios acabam sendo uma motivação a mais, tanto para o
+usuário interessado, quanto para quem colabora com os serviços de terraplanagem, sem falar
+que, é totalmente simples a nível de implementação da solução a fim de solucionar o
+problema.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<b>Objetivo Geral</b>
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Oferecer maior publicidade a empresa contratante
