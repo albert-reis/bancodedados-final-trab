@@ -35,13 +35,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel-select" href="/listarusuario">
+                            <a class="nav-link text-painel" href="/listarusuario">
                                 <span data-feather="list"></span>
                                 Listar Usuários
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel" href="/listarobra">
+                            <a class="nav-link text-painel-select" href="/listarobra">
                                 <span data-feather="list"></span>
                                 Listar Obras
                             </a>
@@ -64,6 +64,13 @@
                         </thead>
                         <!-- As linhas de dados da tabela são gerados no arquivo main.js (função loadItemsTable()) -->
                         <tbody id="itemsBody">
+                            <?php foreach($obras as $obra) { ?>
+                            <tr>
+                                <td {{ $obra->title }}></td>
+                                <td {{ $obra->description }}></td>
+                                <td {{ $obra->image }}></td>
+                            </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>

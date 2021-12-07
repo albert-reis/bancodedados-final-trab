@@ -35,13 +35,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel" href="/listarusuario">
+                            <a class="nav-link text-painel-select" href="/listarusuario">
                                 <span data-feather="list"></span>
                                 Listar Usuários
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel-select" href="/listarobra">
+                            <a class="nav-link text-painel" href="/listarobra">
                                 <span data-feather="list"></span>
                                 Listar Obras
                             </a>
